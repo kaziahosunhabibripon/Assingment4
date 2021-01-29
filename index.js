@@ -10,7 +10,27 @@ function ticketChangeHandler(air, isIncrease){
     }
 
     airTicketInput.value = airTicketNewInputCount;
-    const airTicketPrice = airTicketNewInputCount * 100 ;
-    document.getElementById(air + "TicketPrice").innerText = "Economy($" + airTicketPrice +")";
 
+    let airTTicketPrice = 0;
+    if(air == 'firstClass'){
+        airTicketPrice = airTicketNewInputCount * 150 ;
+        document.getElementById(air + "TicketPrice").innerText = "First Class($" + airTicketPrice +")";
+    }
+    if(air == 'economy'){
+        airTicketPrice = airTicketNewInputCount * 100 ;
+        document.getElementById(air + "TicketPrice").innerText = "Economy ($" + airTicketPrice +")";
+    }  
+    totalPriceCalculation();
+}
+
+function totalPriceCalculation(){
+    const economyTicketInput = document.getElementById("economyTicketCount");
+    const economyTicketCount = parseInt(economyTicketInput.value);
+
+
+    const firstClassTicketInput = document.getElementById("firstClassTicketCount");
+    const firstClassTicketCount = parseInt(firstClassTicketInput.value);
+
+    const totalPrice = economyTicketCount * 100 + firstClassTicketCount * 150; 
+    document.getElementById("subTotal").innerText = "$" + totalPrice;
 }
