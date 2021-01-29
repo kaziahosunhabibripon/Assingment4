@@ -51,12 +51,5 @@ function getTicketValue(air) {
 }
 
 
-const display = document.querySelector("transaction-area");
-const displayOutput = document.querySelector(".booking-form");
-displayOutput.addEventListener("click", function() {
-    const totalAmount = total.value;
-
-})
-
 
 
