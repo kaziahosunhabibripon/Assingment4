@@ -54,7 +54,7 @@
                     <input id="firstClassTicketCount" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span id="addFirstClassTicket">+</span> <span id="minusFirstClassTicket">-</span></p>
+                    <p><span onclick="ticketChangeHandler('firstClass',true)">+</span> <span onclick="ticketChangeHandler('firstClass',false)">-</span></p>
                 </div>
             </div>
             
@@ -64,7 +64,7 @@
                     <input id="economyTicketCount" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span id="addEconomyTicket">+</span> <span id="minusEconomyTicket">-</span> </p>
+                    <p> <span onclick ="ticketChangeHandler('economy',true)">+</span> <span onclick ="ticketChangeHandler('economy',false)">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
