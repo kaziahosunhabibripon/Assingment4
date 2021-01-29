@@ -32,7 +32,7 @@
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh" id="flightArea">
             </div>
             <div class="input-group">
                 <label for="">Flying To</label>
@@ -41,7 +41,7 @@
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                        <input class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
@@ -51,20 +51,22 @@
             <div class="input-group f-class">
                 <div>
                     <label for="" id="firstClassTicketPrice">First Class ($150)</label>
-                    <input id="firstClassTicketCount" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="firstClassTicketCount" class="inp-style" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span onclick="ticketChangeHandler('firstClass',true)">+</span> <span onclick="ticketChangeHandler('firstClass',false)">-</span></p>
+                    <p><span onclick="ticketChangeHandler('firstClass',true)">+</span> <span
+                            onclick="ticketChangeHandler('firstClass',false)">-</span></p>
                 </div>
             </div>
-            
+
             <div class="input-group f-class">
                 <div>
                     <label for="" id="economyTicketPrice">Economy ($100)</label>
-                    <input id="economyTicketCount" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="economyTicketCount" class="inp-style" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick ="ticketChangeHandler('economy',true)">+</span> <span onclick ="ticketChangeHandler('economy',false)">-</span> </p>
+                    <p> <span onclick="ticketChangeHandler('economy',true)">+</span> <span
+                            onclick="ticketChangeHandler('economy',false)">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -95,16 +97,25 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" id="oder">Book Now</button>
         </div>
 
-        <div class="booking-content">
+        <div class="booking-content" id="bookingPart">
             <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                voluptatibus quam</p>
         </div>
-    </section>
+        <div id="transaction-area">
+            <div id="message">
+                <h1> You Have Successfully Booking the Air Ticket!</h1>
+                <p>Check your email for update query!</p>
+            </div>
+        </div>
+    </main>
 
-    <script src="index.js"> </script>  
+    <script src="index.js"> </script>
+
 </body>
 
 </html>
